@@ -1,6 +1,19 @@
 public class Main
 {
-    public static int BS(int[] arr, int x, int left, int right){
+   public static int BS_Iterative(int[] arr, int x){
+        int left=0, right=arr.length-1, mid=0;
+        
+        while(left<=right){
+            mid=(left+right)/2;
+            
+            if(arr[mid]==x) return mid;
+            else if(x>arr[mid]) left=mid+1;
+            else right=mid-1;
+        }
+        return -1;
+    }
+	
+   public static int BS_recursion(int[] arr, int x, int left, int right){
         if(left>right) return -1;
         int mid=(left+right)/2;
         if(arr[mid]==x) return mid;
