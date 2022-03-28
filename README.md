@@ -1,2 +1,2 @@
 # DataStructure-Solution
-Lookup textbook for Data Structure solution
+Personal notes for Data Structure solution
